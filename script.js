@@ -1,13 +1,20 @@
 
+// body style
+document.body.style.margin = "0";
+document.body.style.backgroundColor = "hsl(217, 54%, 11%)";
+document.body.style.fontFamily = "Outfit, sans-serif";
 
-// let card = document.createElement("div");
-// div.setAttribute('id', 'wrapper');
-// card.style.backgroundColor = "hsl(216, 50%, 16%)";
-// document.body.appendChild(card);
+const card = document.createElement("div");
+card.id = "wrapper";
+card.style.backgroundColor = "hsl(216, 50%, 16%)";
+document.body.appendChild(card);
 
 const cardImg = document.createElement("img");
 cardImg.src= "/images/image-equilibrium.jpg";
 cardImg.className = "cardImg";
+cardImg.style.borderRadius = "10px";
+cardImg.style.maxWidth = "300px";
+cardImg.style.maxHeight = "300px";
 document.body.appendChild(cardImg);
 
 const title = document.createElement("h3");
@@ -17,10 +24,11 @@ title.style.color = "hsl(0, 0%, 100%)";
 document.body.appendChild(title);
 
 const subtitle = document.createElement("p");
-subtitle.innerText = "Our Equilibrium collection promotesbalance and calm";
+subtitle.innerText = "Our Equilibrium collection promotes balance and calm.";
 subtitle.className = "subtitle";
 subtitle.style.color = "hsl(215, 51%, 70%)";
 subtitle.style.fontSize = "18px";
+subtitle.style.width = "300px";
 document.body.appendChild(subtitle);
 
 const etherium = document.createElement("img");
@@ -50,6 +58,8 @@ document.body.appendChild(deadline);
 const avatarImg = document.createElement("img");
 avatarImg.src = "/images/image-avatar.png";
 avatarImg.className = "avatar";
+avatarImg.style.width = "100px";
+avatarImg.style.height = "100px";
 document.body.appendChild(avatarImg);
 
 const madeBy = document.createElement("p");
