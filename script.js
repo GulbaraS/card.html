@@ -55,6 +55,7 @@ const saleData = document.createElement("div");
 saleData.style.display = "flex";
 saleData.style.justifyContent = "space between";
 saleData.style.marginBottom = "15px";
+saleData.style.maxWidth = "300px";
 card.appendChild(saleData);
 
 //div for price
@@ -80,7 +81,7 @@ priceDiv.appendChild(price);
 
 //div fot deadline
 let deadlineDiv = document.createElement("div");
-deadlineDiv.style.marginLeft = "100px";
+deadlineDiv.style.marginLeft = "90px";
 saleData.appendChild(deadlineDiv);
 
 const clockImg = document.createElement("img");
@@ -105,7 +106,12 @@ line.style.borderColor = "hsl(215, 32%, 27%";
 line.style.marginBottom = "15px";
 card.appendChild(line);
 
-//
+//footer
+let footer = document.createElement("div");
+footer.className = "footer";
+footer.style.display = "flex";
+footer.style.justifyContent = "center";
+card.appendChild(footer);
 
 const avatarImg = document.createElement("img");
 avatarImg.src = "/images/image-avatar.png";
@@ -114,15 +120,17 @@ avatarImg.style.width = "50px";
 avatarImg.style.height = "50px";
 avatarImg.style.borderRadius = "50%";
 avatarImg.style.border = "1px solid white";
-card.appendChild(avatarImg);
+footer.appendChild(avatarImg);
 
 
 const madeBy = document.createElement("p");
-madeBy.innerText = "creation of ";
+madeBy.innerText = "Creation of ";
 madeBy.className = "madeBy";
 madeBy.style.color = "hsl(215, 51%, 70%)";
 madeBy.style.fontSize = "18px";
-card.appendChild(madeBy);
+madeBy.style.display = "inline";
+madeBy.style.margin = "10px";
+footer.appendChild(madeBy);
 
 
 const madeByName = document.createElement("p");
@@ -130,6 +138,8 @@ madeByName.innerText = "Jules Wyvern";
 madeByName.className = "madeByName";
 madeByName.style.color = "hsl(0, 0%, 100%)";
 madeByName.style.fontSize = "18px";
-card.appendChild(madeByName);
+madeByName.style.display = "inline";
+madeByName.style.margin = "10px";
+footer.appendChild(madeByName);
 
 
