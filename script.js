@@ -53,7 +53,8 @@ card.appendChild(subtitle);
 //div for price and deadline
 const saleData = document.createElement("div");
 saleData.style.display = "flex";
-saleData.style.justifyContent = "space between";
+saleData.style.flexDirection = "row";
+saleData.style.justifyContent = "space-between";
 saleData.style.marginBottom = "15px";
 saleData.style.maxWidth = "300px";
 card.appendChild(saleData);
@@ -81,7 +82,6 @@ priceDiv.appendChild(price);
 
 //div fot deadline
 let deadlineDiv = document.createElement("div");
-deadlineDiv.style.marginLeft = "90px";
 saleData.appendChild(deadlineDiv);
 
 const clockImg = document.createElement("img");
@@ -102,7 +102,7 @@ deadlineDiv.appendChild(deadline);
 
 // line
 let line = document.createElement("hr");
-line.style.borderColor = "hsl(215, 32%, 27%";
+line.style.border = "1px solid hsl(215, 32%, 27%";
 line.style.marginBottom = "15px";
 card.appendChild(line);
 
@@ -129,7 +129,7 @@ madeBy.className = "madeBy";
 madeBy.style.color = "hsl(215, 51%, 70%)";
 madeBy.style.fontSize = "18px";
 madeBy.style.display = "inline";
-madeBy.style.margin = "10px";
+madeBy.style.marginLeft = "20px";
 footer.appendChild(madeBy);
 
 
@@ -139,7 +139,8 @@ madeByName.className = "madeByName";
 madeByName.style.color = "hsl(0, 0%, 100%)";
 madeByName.style.fontSize = "18px";
 madeByName.style.display = "inline";
-madeByName.style.margin = "10px";
+madeByName.style.marginLeft = "10px";
 footer.appendChild(madeByName);
 
 
+//alert("Я оцениваю свою работу на 110 баллов");
