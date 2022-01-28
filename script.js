@@ -1,6 +1,7 @@
 
 // body style
 document.body.style.margin = "0";
+document.body.style.height = "100%";
 document.body.style.backgroundColor = "hsl(217, 54%, 11%)";
 document.body.style.fontFamily = "Outfit, sans-serif";
 
@@ -11,6 +12,8 @@ wrapper.style.margin = "0 auto";
 wrapper.style.maxWidth = "1440px";
 wrapper.style.display = "flex";
 wrapper.style.justifyContent = "center";
+//wrapper.style.alignItems = "center";
+//wrapper.style.marginTop = "80px";
 document.body.appendChild(wrapper);
 
 //card
@@ -143,4 +146,4 @@ madeByName.style.marginLeft = "10px";
 footer.appendChild(madeByName);
 
 
-//alert("Я оцениваю свою работу на 110 баллов");
+//alert("Я оцениваю свою работу на 100 баллов");
